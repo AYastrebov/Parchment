@@ -11,12 +11,16 @@ class ViewController: UIViewController {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let firstViewController = storyboard.instantiateViewController(withIdentifier: "FirstViewController")
     let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController")
+    let thirdViewController = storyboard.instantiateViewController(withIdentifier: "ThirdViewController")
+    let fourthViewController = storyboard.instantiateViewController(withIdentifier: "FourthViewController")
     
     // Initialize a FixedPagingViewController and pass
     // in the view controllers.
     let pagingViewController = FixedPagingViewController(viewControllers: [
       firstViewController,
-      secondViewController
+      secondViewController,
+      thirdViewController,
+      fourthViewController
     ])
     
     // Make sure you add the PagingViewController as a child view
